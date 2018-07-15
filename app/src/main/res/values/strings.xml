@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Instahelp</string>
+
+    <string name="user_successfully_added">User Added</string>
+    <string name="user_unable_to_add">Unable to add user</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
