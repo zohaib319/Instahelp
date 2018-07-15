@@ -30,15 +30,15 @@ public class AddUserInteractor implements AddUserContract.Interactor {
     public void addUserToDatabase(final Context context, FirebaseUser firebaseUser) {
         DatabaseReference database = FirebaseDatabase.getInstance().getReference();
         String key = firebaseUser.getEmail();
-        int index = key.indexOf('@');
-        String node_name = key.substring(0,index);
+//        int index = key.indexOf('@');
+//        String node_name = key.substring(0,index);
 
 
         User user = new User(firebaseUser.getUid(),
                 firebaseUser.getEmail(),
                 new SharedPrefUtil(context).getString(Constants.ARG_FIREBASE_TOKEN));
         database.child(Constants.ARG_USERS)
-                .child(node_name)
+                .child(firebaseUser.getUid())
                 .setValue(user)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override

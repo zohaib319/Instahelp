@@ -1,5 +1,7 @@
 package ndroid.google.com.instahelp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+    public static void startActivity(Context context, int flags) {
+        Intent intent = new Intent(context, MainActivity.class);
+        intent.setFlags(flags);
+        context.startActivity(intent);
+
+
     }
 
 }
