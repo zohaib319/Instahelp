@@ -1,19 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.LoginFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp">
 
     <!-- TODO: Update blank fragment layout -->
-    <FrameLayout
-        android:id="@+id/frame_layout_content_register"
+    <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp" />
 
-    </FrameLayout>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Choose a Username"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp" />
 
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Choose a Password"
+        android:inputType="textPassword"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <com.gigamole.library.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:sl_shadow_angle="90"
+        app:sl_shadow_color="#65000000"
+        app:sl_shadow_distance="3dp"
+        app:sl_shadow_radius="2dp"
+        app:sl_shadowed="true">
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_btn"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBackground" />
+    </com.gigamole.library.ShadowLayout>
+
+</LinearLayout>

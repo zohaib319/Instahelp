@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.activities.LoginActivity"
+            android:name=".ui.activities.Welcome"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +24,11 @@
         <activity android:name=".ui.activities.RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ui.activities.ResetPassword" />
-        <activity android:name=".ui.activities.Welcome" />
+        <activity android:name=".ui.activities.LoginActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

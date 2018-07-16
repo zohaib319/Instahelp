@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.Welcome">
+    android:background="@color/colorBackground">
 
-</android.support.constraint.ConstraintLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_shadow_angle="90"
+            app:sl_shadow_color="#65000000"
+            app:sl_shadow_distance="3dp"
+            app:sl_shadow_radius="2dp"
+            app:sl_shadowed="true">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/main_btn_fb"
+                android:text="Connect with Facebook" />
+        </com.gigamole.library.ShadowLayout>
+
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:sl_shadow_angle="90"
+            app:sl_shadow_color="#65000000"
+            app:sl_shadow_distance="3dp"
+            app:sl_shadow_radius="2dp"
+            app:sl_shadowed="true">
+
+            <Button
+                android:id="@+id/signup_using_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/main_btn"
+                android:text="Signup using Email" />
+        </com.gigamole.library.ShadowLayout>
+
+        <LinearLayout
+            android:id="@+id/go_to_signin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Already have an account ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/go_to_signin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Sign In "
+                android:textColor="@color/colorMain"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
