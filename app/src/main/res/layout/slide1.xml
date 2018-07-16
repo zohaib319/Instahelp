@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/preview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="40dp"
+        android:text="..."
+        android:textColor="@color/colorMain"
+        android:textCursorDrawable="@drawable/baseline_minimize_24"
+        android:textSize="40sp" />
+
+</RelativeLayout>

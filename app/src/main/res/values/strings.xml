@@ -10,4 +10,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <array name="welcom_strings">
+        <item >Get Instant  \nHelp From \nExperts.</item>
+        <item >Participate to  \nHelp the \nBeginners.</item>
+        <item >Lets get  \non-board for a \nBetter Community.</item>
+    </array>
 </resources>

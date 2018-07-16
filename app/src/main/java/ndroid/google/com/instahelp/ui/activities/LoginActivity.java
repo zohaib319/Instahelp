@@ -11,6 +11,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import ndroid.google.com.instahelp.MainActivity;
 import ndroid.google.com.instahelp.R;
 import ndroid.google.com.instahelp.core.login.LoginContract;
@@ -36,6 +39,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         password = (EditText)findViewById(R.id.password);
         login = (Button) findViewById(R.id.login_btn);
         forgot_password = (LinearLayout) findViewById(R.id.go_to_forgot_password);
+
         init();
 
     }

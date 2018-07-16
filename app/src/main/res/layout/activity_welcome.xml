@@ -7,7 +7,24 @@
     android:background="@color/colorBackground">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutDots" />
+
     <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/l1"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"/>
+    <LinearLayout
+        android:id="@+id/l1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -15,7 +32,6 @@
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
-
 
 
         <com.gigamole.library.ShadowLayout
