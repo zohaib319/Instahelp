@@ -24,6 +24,7 @@ import java.util.ArrayList;
 
 import ndroid.google.com.instahelp.R;
 import ndroid.google.com.instahelp.models.Categories;
+import ndroid.google.com.instahelp.models.SubCategories;
 
 import static android.content.ContentValues.TAG;
 
@@ -95,10 +96,10 @@ public class UserPreferenceFargment extends Fragment {
                     String name = ds.getKey();
                     Categories categories=new Categories();
                     categories.setName(name);
-                    ArrayList<String> childs=new ArrayList<>();
+                    ArrayList<SubCategories> childs=new ArrayList<>();
                     for(DataSnapshot ds1 : ds.getChildren()) {
                         String key1 = ds1.getValue(String.class);
-                        childs.add(key1);
+                        childs.add(new SubCategories(key1));
                         Log.d("TAG", name + " / " + key1 + " / ");
                     }
                     categories.setSubCategories(childs);

@@ -4,11 +4,10 @@ public class SubCategories{
     String name,image;
     boolean cb;
 
-    public  SubCategories(String name,String image,boolean cb)
+    public  SubCategories(String name)
     {
         this.name=name;
-        this.image=image;
-        this.cb=cb;
+
     }
     public void setName(String name) {
         this.name = name;
