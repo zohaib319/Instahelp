@@ -66,10 +66,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 {
                     Toast.makeText(RegisterActivity.this, "One or more field is empty", Toast.LENGTH_SHORT).show();
                 }
-                else
-                {
-                    onRegister(v);
-                }
+//                else
+//                {
+                    Intent a=new Intent(RegisterActivity.this,UserPreferencesActivity.class);
+                    startActivity(a);
+//                    onRegister(v);
+//                }
                 break;
         }
 

@@ -25,6 +25,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ui.activities.ResetPassword" />
         <activity android:name=".ui.activities.LoginActivity" />
+        <activity android:name=".ui.activities.UserPreferencesActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

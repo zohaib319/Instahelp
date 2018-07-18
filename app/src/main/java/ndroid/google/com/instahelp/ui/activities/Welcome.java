@@ -152,6 +152,10 @@ public class Welcome extends AppCompatActivity {
 
             if(position!=0)
             {
+                if(position==1)
+                    preview1.setTextColor(getResources().getColor(android.R.color.holo_green_dark));
+                else
+                    preview1.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
                 final Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override

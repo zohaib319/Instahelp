@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp">
+
+    <EditText
+        android:id="@+id/hold_on_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textCursorDrawable="@drawable/baseline_minimize_24"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Please choose your age" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/number_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:np_formatter="@string/number_picker_formatter"
+        app:np_height="70dp"
+        app:np_max="65"
+        app:np_min="12"
+        app:np_dividerColor="@android:color/darker_gray"
+        app:np_orientation="horizontal"
+        app:np_selectedTextColor="@color/colorMain"
+        app:np_selectedTextSize="18sp"
+        app:np_textSize="14sp"
+        app:np_value="18" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Please choose your gender" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/male_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/male_cb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                app:animDuration="300"
+                app:checkedColor="@color/colorMain"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorMain" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Male"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/female_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/female_cb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                app:animDuration="200"
+                app:checkedColor="@color/colorMain"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorMain" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Female"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.gigamole.library.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:sl_shadow_angle="90"
+        app:sl_shadow_color="#65000000"
+        app:sl_shadow_distance="3dp"
+        app:sl_shadow_radius="2dp"
+        app:sl_shadowed="true">
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_btn"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:paddingRight="40dp"
+            android:text="Next     1/2"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBackground" />
+    </com.gigamole.library.ShadowLayout>
+
+</LinearLayout>

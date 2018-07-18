@@ -12,8 +12,11 @@
     <string name="title_notifications">Notifications</string>
 
     <array name="welcom_strings">
-        <item >Get Instant  \nHelp From \nExperts.</item>
-        <item >Participate to  \nHelp the \nBeginners.</item>
-        <item >Lets get  \non-board for a \nBetter Community.</item>
+        <item>Get Instant \nHelp From \nExperts.</item>
+        <item>Participate to \nHelp the \nBeginners.</item>
+        <item>Lets get \non-board for a \nBetter Community.</item>
+        <item>Hold On !\nit will take \nfew moments \nto setup things.</item>
     </array>
+
+    <string name="number_picker_formatter">%02d</string>
 </resources>
