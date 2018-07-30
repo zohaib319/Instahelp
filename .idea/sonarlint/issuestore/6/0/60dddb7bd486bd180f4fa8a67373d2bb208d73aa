@@ -1,14 +1,14 @@
 
-@squid:S1068"+Remove this unused "mParam1" private field.(•Íï‘
-@squid:S1068"+Remove this unused "mParam2" private field.(¡ˆ€ 
-ksquid:S1450"VRemove the "mParam1" field and declare it as a local variable in the relevant methods.(•Íï‘
-ksquid:S1450"VRemove the "mParam2" field and declare it as a local variable in the relevant methods.(¡ˆ€ 
-Lsquid:S1135"2Complete the task associated to this TODO comment.(ÜûŠ—øÿÿÿÿ
-Lsquid:S1135"2Complete the task associated to this TODO comment.(ğï¢öúÿÿÿÿ
-Lsquid:S1135"2Complete the task associated to this TODO comment.(ßíŠÿÿÿÿÿ
-Gsquid:S1135"2Complete the task associated to this TODO comment.(åµÈ¶
-Gsquid:S1135"2Complete the task associated to this TODO comment.(‡‚ùˆ
-@squid:S1481"+Remove this unused "layout" local variable.( ­·‘
-\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(İŒÜ±
-Osquid:S1854":Remove this useless assignment to local variable "layout".( ­·‘
-Wsquid:UselessImportCheck"0Remove this unused import 'android.view.Window'.(¿è™÷úÿÿÿÿ
+Qsquid:S1135Š"2Complete the task associated to this TODO comment.(åµÈ¶8ùõøÊ,
+fsquid:S00112—"FDefine and throw a dedicated exception instead of using a generic one.(İŒÜ±8ùõøÊ,
+Isquid:S1068/"+Remove this unused "mParam2" private field.(¡ˆ€ 8ùõøÊ,
+Isquid:S1481y"+Remove this unused "layout" local variable.( ­·‘8ùõøÊ,
+Usquid:S1135-"2Complete the task associated to this TODO comment.(ğï¢öúÿÿÿÿ8ùõøÊ,
+Qsquid:S1135­"2Complete the task associated to this TODO comment.(‡‚ùˆ8ùõøÊ,
+Xsquid:S1854y":Remove this useless assignment to local variable "layout".( ­·‘8ùõøÊ,
+tsquid:S1450/"VRemove the "mParam2" field and declare it as a local variable in the relevant methods.(¡ˆ€ 8ùõøÊ,
+tsquid:S1450."VRemove the "mParam1" field and declare it as a local variable in the relevant methods.(•Íï‘8ùõøÊ,
+`squid:UselessImportCheck"0Remove this unused import 'android.view.Window'.(¿è™÷úÿÿÿÿ8ùõøÊ,
+Usquid:S1135("2Complete the task associated to this TODO comment.(ÜûŠ—øÿÿÿÿ8ùõøÊ,
+Usquid:S1135@"2Complete the task associated to this TODO comment.(ßíŠÿÿÿÿÿ8ùõøÊ,
+Isquid:S1068."+Remove this unused "mParam1" private field.(•Íï‘8ùõøÊ,

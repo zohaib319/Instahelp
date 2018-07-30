@@ -1,10 +1,13 @@
 package ndroid.google.com.instahelp.Adapters;
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hanks.library.AnimateCheckBox;
@@ -21,7 +24,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
     private ItemClickListener mClickListener;
 
     // data is passed into the constructor
-    CategoriesAdapter(Context context, List<SubCategories> data) {
+    public CategoriesAdapter(Context context, List<SubCategories> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
     }
@@ -35,9 +38,24 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
 
     // binds the data to the TextView in each row
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         SubCategories object = mData.get(position);
         holder.name.setText(object.getName());
+        holder.rl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(holder.checkBox.isChecked())
+                {
+                    holder.checkBox.setChecked(false);
+                    holder.checkBox.setVisibility(View.INVISIBLE);
+                }else{
+                    holder.checkBox.setChecked(true);
+                    holder.checkBox.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
     }
 
     // total number of rows
@@ -50,12 +68,14 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView name;
-        TextView image;
+        AppCompatImageView image;
         AnimateCheckBox checkBox;
+        RelativeLayout rl;
 
         ViewHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.name);
+            rl=itemView.findViewById(R.id.rl);
             image= itemView.findViewById(R.id.icon);
             checkBox=itemView.findViewById(R.id.cb);
             itemView.setOnClickListener(this);

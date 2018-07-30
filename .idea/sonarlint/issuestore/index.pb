@@ -21,3 +21,17 @@ w
 Gapp/src/main/java/ndroid/google/com/instahelp/models/SubCategories.java,2\9\292aa9ccb6126fe34583729c861f71383566f6dc
 }
 Mapp/src/main/java/ndroid/google/com/instahelp/Adapters/CategoriesAdapter.java,b\9\b9fe3ee7a24d291902411b1454c3e05ad2d084ba
+Å
+Qapp/src/main/java/ndroid/google/com/instahelp/ui/activities/RegisterActivity.java,3\1\316acde61d28a89b322d5bae6ec719875b4e23ea
+x
+Happ/src/main/java/ndroid/google/com/instahelp/ui/activities/Welcome.java,2\5\25b397efc9aeba249e55b37a34d18d9586dfeed6
+É
+Sapp/src/main/java/ndroid/google/com/instahelp/ui/fragments/GeneralInfoFragment.java,5\b\5b6a80659418dce65165db6f1491e08f79e9cfbc
+d
+4app/src/main/res/layout/activity_user_preference.xml,9\4\940bbfdd2f0489e0ee349016a3e353990de0da70
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+o
+?app/src/main/java/ndroid/google/com/instahelp/MainActivity.java,3\9\39434977117a880fb2d751a11741371349c5563a
